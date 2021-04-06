@@ -4,10 +4,10 @@ import { Container, InnerContainer, Logo } from "../styles/Login.style"
 
 function Login() {
 
-    const signInWithMicrosoft = () => {
-        auth.signInWithPopup(microsoftProvider)
-            .catch((error) => alert(error.message));
-    }
+    // const signInWithMicrosoft = () => {
+    //     auth.signInWithPopup(microsoftProvider)
+    //         .catch((error) => alert(error.message));
+    // }
 
     const signInWithGoogle = () => {
         auth.signInWithPopup(googleProvider)
@@ -24,7 +24,7 @@ function Login() {
                 <h1>Sign In To Slack</h1>
                 <p>slack.com</p>
 
-                <Button
+                {/* <Button
                     style={{ margin: "10px", marginTop: "20px" }}
                     variant="outlined"
                     onClick={signInWithMicrosoft}
@@ -36,7 +36,7 @@ function Login() {
                         alt="Microsoft"
                     />
                     Sign in with Microsoft
-                </Button>
+                </Button> */}
 
                 <Button
                     variant="outlined"
